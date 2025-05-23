@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width
+{
+    max-width: 1300px;
+    padding:0 20px ;
+    margin: auto;
+}
+/* similar styling */
+section{
+    padding:100px  0;
+    color: #fff;
+}
+.about .skills{
+    font-family: 'Poppins',sans-serif;
+}
+.about .about-content, .skills .skills-content, footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+    text-decoration: underline;
+    color: #fff;
+}
+/* navbar styling */
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    padding:30px 0 ;
+    z-index: 999;
+    background:black;
+    font-family:'ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky
+{
+    padding: 15px 0;
+    background: rgb(45, 34, 31);
+}
+.navbar .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a
+{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li
+{
+    list-style:none ;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover
+{
+    color:#00eeff;
+}
+/* menu-btn styling */
+.menu-btn
+{
+    color: #fff;
+    font-size:23px;
+    cursor: pointer;
+    display: none;
+}
+/* home styling */
+.home
+{
+    display: flex;
+    background: url("workplace2.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 500px;
+    font-weight: bold;
+    font-display:left;
+    left:500px;
+}
+.home .max-width
+{
+    margin: auto 100px auto 100px;
+}
+.home .home-content .text-1
+{
+    font-size: 40px;
+    color: whitesmoke;
+}
+.home .home-content .text-2
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: -100px;
+    color: white;
+    text-align: left;
+    
+}
+.home .home-content a{
+    display: inline-block;
+    background:whitesmoke;
+    color:black;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: all 0.3s ease ;
+}
+.home .home-content a:hover{
+    color:#fff;
+    background: none;
+}
+/* about me styling */
+section{
+    padding: 100px 0;
+    background: #111;
+}
+.about .title{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration:underline;
+    color: #fff;
+}
+.about .about-content{
+    display:flex ;
+    flex-wrap: wrap;
+    align-items:center ;
+    justify-content:space-between ;
+    color: #fff;
+}
+.about .about-content .left{
+    width:45%
+}
+.about .about-content .left img{
+    height: 400px ;
+    width: 400px;
+    border-radius: 500px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width:55%
+}
+.about .about-content .right .text{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text p{
+    text-align: justify;
+    font-size: 100px;
+}
+/* skills styling */
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .max-width .title1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .right .span{
+    font-weight:500 ;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: rgb(139, 154, 170);
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:80%;
+    left:0;
+    top:0;
+    background:#00eeff;
+}
+.skills .skills-content .right .html::before{
+    width:95%;
+}
+.skills .skills-content .right .css::before{
+    width:90%;
+}
+.skills .skills-content .right .js::before{
+    width:80%;
+}
+.skills .skills-content .right .python::before{
+    width:85%;
+}
+.skills .skills-content .right .c::before{
+    width:70%;
+}
+.skills .skills-content .left .lines{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .tech{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .left .span{
+    font-weight:500 ;
+    font-size: 18px;
+}
+.skills .skills-content .left .dash{
+    height: 5px;
+    width: 100%;
+    background: rgb(139, 154, 170);
+    position: relative;
+}
+.skills .skills-content .left .dash::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:80%;
+    left:0;
+    top:0;
+    background:#00eeff;
+}
+.skills .skills-content .left .communication::before{
+    width:90%;
+}
+.skills .skills-content .left .problem::before{
+    width:90%;
+}
+.skills .skills-content .left .Leadership::before{
+    width:95%;
+}
+.skills .skills-content .left .team::before{
+    width:95%;
+}
+.skills .skills-content .left .adapt::before{
+    width:100%;
+}
+/* certificate styling */
+.certificate .certificate-content{
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+.certificate .certificate-content #c1{
+    font-size: 25px;
+    color: #00eeff;
+}
+/* contact styling */
+.contact .max-width .contact-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    color: #00eeff;
+}
+/* footer styling */
+footer{
+    background: #111;
+}
+/* responsive media query */
+@media(max-width:1104px)
+{
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media(max-width:1104px)
+{
+    .about .about-content .left img{
+        height: 350px;
+        width:350px;
+    }
+}
+@media(max-width:991px)
+{
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media(max-width:947px) 
+{
+    .menu-btn
+    {
+        display:block;
+        z-index: 999;     
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top:0;
+        background: #111;
+        text-align:center ;
+        padding-top:80px ;
+        transition:all 0.3s ease;
+        }
+    .navbar .menu.active{
+        left:0;
+    }    
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2
+    {
+        font-size: 70px;
+    
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width:800px;
+    }
+    .about .about-content .column{
+        width:100%;
+    }
+    .about .about-content .left{
+        display:flex;
+        justify-content:center;
+        margin: 0 auto 60px ;
+    }
+    .about .about-content .right{
+        flex:100%;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom:15px;
+    }
+    .certificate .certificate-content{
+        width: 100%;
+    }
+    .contact .contact-content{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:690px)
+{
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2
+    {
+        font-size: 60px;
+    
+    }
+    .home .home-content a{
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
+@media (max-width:500px)
+{
+    .home .home-content .text-2
+    {
+        font-size: 50px;
+    
+    }
+}
